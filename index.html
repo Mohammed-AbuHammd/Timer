@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Time</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="box">
+        <div class="top">
+          <h1>Time</h1>
+        </div>
+        <div class="middle timer">
+        
+
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" id="hours-input" placeholder="00" />
+              <label for="hours-input">H</label>
+            </div>
+
+            <div class="input-group">
+              <input type="text" id="minutes-input" placeholder="00" />
+              <label for="minutes-input">M</label>
+            </div>
+            <div class="input-group">
+              <input type="text" id="seconds-input" placeholder="00" />
+              <label for="seconds-input">S</label>
+            </div>
+          </div>
+        </div>
+        <div class="bottom control">
+          <button id="start">Start</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
