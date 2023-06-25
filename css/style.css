@@ -1,6 +1,111 @@
-*{
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
+
+*,
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+}
+.main .box {
+  height: 300px;
+  width: 650px;
+  border-radius: 10px;
+  border: 1px solid rgba(221, 221, 221, 0.15);
+}
+.main .box .top {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.15);
+}
+.main .box .top h1 {
+  color: #8ab4f8;
+  font-weight: 200;
+  font-size: 20px;
+}
+.main .box .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70%;
+  color: #ddd;
+}
+.main .box .middle .display {
+  font-size: 36px;
+}
+.main .box .middle .form-group {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+}
+.main .box .middle .form-group .input-group input {
+  height: 60px;
+  width: 70px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(221, 221, 221, 0.15);
+  border-right: 0;
+  text-align: center;
+}
+.main .box .middle .form-group .input-group label {
+  color: #eee;
+  padding-right: 10px;
+}
+.main .box .bottom {
+  padding: 0 25px;
+  height: 15%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(221, 221, 221, 0.15);
+  cursor: pointer;
+}
+.main .box .bottom button {
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  height: 25px;
+  width: 70px;
+}
+.main .box .bottom #start {
+  background-color: #8ab4f8;
+  transition: 0.3s ease-in-out;
+  color: #171717;
+}
+.main .box .bottom #start:hover {
+  background-color: #0662f7;
+}
+.main .box .bottom #reset {
+  background-color: #eee;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #eee;
+}
+.main .box .bottom #reset:hover {
+  background-color: #171717;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}/*# sourceMappingURL=style.css.map */

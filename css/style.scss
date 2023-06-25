@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*,
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+
+  .box {
+    height: 300px;
+    width: 650px;
+    border-radius: 10px;
+    border: 1px solid rgba($color: #ddd, $alpha: 0.15);
+
+    .top {
+      height: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid rgba($color: #ddd, $alpha: 0.15);
+
+      h1 {
+        color: #8ab4f8;
+        font-weight: 200;
+        font-size: 20px;
+      }
+    }
+
+    .middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 70%;
+      color: #ddd;
+
+      .display {
+        font-size: 36px;
+      }
+
+      .form-group {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+border-radius: 6px;
+        .input-group {
+          input {
+            height: 60px;
+            width: 70px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+            padding: 5px;
+            background-color: transparent;
+            border: 1px solid rgba($color: #ddd, $alpha: 0.15);
+            border-right: 0;
+            text-align: center;
+          }
+
+          label {
+            color: #eee;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      padding: 0 25px;
+      height: 15%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid rgba($color: #ddd, $alpha: 0.15);
+      cursor: pointer;
+      button {
+        border: 0;
+        border-radius: 5px;
+        display: block;
+        height: 25px;
+        width: 70px;
+      }
+
+      #start {
+        background-color: #8ab4f8;
+        transition: 0.3s ease-in-out;
+        color: #171717;
+
+        &:hover {
+          background-color: #0662f7;
+        }
+      }
+
+      #reset {
+        background-color: #eee;
+        transition: 0.3s ease-in-out;
+        border: 1px solid #eee;
+
+        &:hover {
+          background-color: #171717;
+          color: #fff;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
